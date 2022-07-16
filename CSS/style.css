@@ -52,3 +52,34 @@
 .fa-brands {
 	font-size: 24px;
 }
+
+.container,
+.inner {
+	width: 150px;
+	height: 150px;
+	border: 3px solid khaki;
+}
+
+.container {
+	background-color: lightblue;
+}
+
+.inner {
+	background-color: coral;
+	/* transform: scale(0.75); */
+	transform: scale(0.75) rotate(45deg) translate(50px, 50px);
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	border: 2px solid cadetblue;
+	background-color: coral;
+	transition: width 5s ease, height 5s ease, transform 2s;
+}
+
+.box:hover {
+	width: 400px;
+	height: 400px;
+	transform: rotate(180deg);
+}
